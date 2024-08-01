@@ -1,4 +1,4 @@
-# NEI2024 - Vê a Terra
+# NEI2024 - Consegues pensar como a inteligência artificial?
 
 Actividade para a Noite Europeia dos Investigadores 2024.
 
