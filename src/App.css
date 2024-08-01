@@ -86,7 +86,7 @@
 }
 
 .question-img img {
-  width: 75%;
+  width: 20%;
   border-radius: 15px;
   border: 8px solid #06D6A0;
 }
@@ -131,7 +131,7 @@ button {
 
 .answer-choice {
   height: 200px;
-  background-size: 400px;
+  background-size: 180px;
   background-position: center;
 }
 
@@ -161,7 +161,7 @@ img.incorrect {
   margin-bottom: 20px;
 }
 
-img.sar-img {
+img.harder-img {
   width: 200px;
   margin-left: 20px;
 }

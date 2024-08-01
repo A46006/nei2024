@@ -83,7 +83,7 @@ function App() {
           <div className='app'>
             <div className='question-section'>
               <div className='question-count'>
-                <span>Bem-vindo ao quiz "consegues pensar como a inteligência artificial?"</span>
+                <span>Bem-vindo ao quiz "Consegues pensar como a inteligência artificial?"</span>
               </div>
               <div className='question-text'>
                 <p>
@@ -177,13 +177,13 @@ function App() {
                 <span>Pergunta {currentQuestion + 1}</span>/{questions.length}
               </div>
               <div className='question-img'>
-                <img src={questionSet[questions[currentQuestion]].questionImg} />
+                <img src={isHardMode ? questionSet[questions[currentQuestion]].harderImg : questionSet[questions[currentQuestion]].questionImg} />
               </div>
               <div className='question-text'>{questionSet[questions[currentQuestion]].questionText}</div>
             </div>
             <div className='answer-section'>
               {answerSet.map((answerOption) => (
-                <button className='answer-choice' onClick={() => handleAnswerOptionClick(answerOption)} style={{backgroundImage: `url(${isHardMode ? questionSet[answerOption].sarImg : questionSet[answerOption].answerImg})`}} />
+                <button className='answer-choice' onClick={() => handleAnswerOptionClick(answerOption)} style={{backgroundImage: `url(${isHardMode ? questionSet[answerOption].questionImg : questionSet[answerOption].answerImg})`}} />
               ))}
             </div>
           </div>
@@ -208,7 +208,7 @@ function App() {
               {lastAnswer === questions[currentQuestion] ? (
                 <>
                   <div className='question-img'>
-                    <img className='correct' src={isHardMode ? questionSet[questions[currentQuestion]].sarImg : questionSet[questions[currentQuestion]].answerImg} />
+                    <img className='correct' src={isHardMode ? questionSet[questions[currentQuestion]].harderImg : questionSet[questions[currentQuestion]].answerImg} />
                   </div>
                   <div className='question-img'>
                     <img className='tick' src={tickImg} />
@@ -217,10 +217,10 @@ function App() {
               ) : (
                 <>
                   <div className='question-img'>
-                    <img src={isHardMode ? questionSet[questions[currentQuestion]].sarImg : questionSet[questions[currentQuestion]].answerImg} />
+                    <img src={isHardMode ? questionSet[questions[currentQuestion]].harderImg : questionSet[questions[currentQuestion]].answerImg} />
                   </div>
                   <div className='question-img'>
-                    <img className='incorrect' src={isHardMode ? questionSet[lastAnswer].sarImg : questionSet[lastAnswer].answerImg} />
+                    <img className='incorrect' src={isHardMode ? questionSet[lastAnswer].harderImg : questionSet[lastAnswer].answerImg} />
                   </div>
                   <div className='question-img'>
                     <img className='cross' src={crossImg} />
@@ -233,7 +233,7 @@ function App() {
                   {questionSet[questions[currentQuestion]].answerText}
                 </div>
                 <div className='question-img'>
-                  <img className='sar-img' src={isHardMode ? questionSet[questions[currentQuestion]].answerImg : questionSet[questions[currentQuestion]].sarImg} />
+                  <img className='harder-img' src={questionSet[questions[currentQuestion]].questionImg} />
                 </div>
               </div>
             </div>
