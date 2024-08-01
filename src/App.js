@@ -6,8 +6,6 @@ import trophyImg from './assets/trophy.svg';
 import neuralNet from "./assets/Neural_network.svg";
 import convAnim from "./assets/conv_anim.gif"
 import neiImg from './assets/NEI.png';
-import duarteImg from './assets/team/duarte.galvao.jpg';
-import helenaImg from './assets/team/helena.cruz.jpeg';
 import ruiImg from './assets/team/rui.duarte.png';
 import questionSet from './questions';
 import React, { useState } from 'react';
@@ -276,12 +274,12 @@ function App() {
             <p>Esta actividade foi criada no âmbito do projecto de investigação <a href="https://www.inesc-id.pt/projects/IE01018/">SARRROCA</a> (PTDC/EEI-HAC/31819/2017) em execução no <a href="https://www.inesc-id.pt/">INESC-ID</a>, financiado pela FCT, e foi desenvolvida por:</p>
             <div className='team-pics'>
               <div className='team-pic'>
-                <div><img src={duarteImg} /></div>
-                <div>Duarte Galvão</div>
+                <div><img /></div>
+                <div>Ussumane Soaré</div>
               </div>
               <div className='team-pic'>
-                <div><img src={helenaImg} /></div>
-                <div>Helena Cruz</div>
+                <div><img /></div>
+                <div>Gustavo Jacinto</div>
               </div>
               <div className='team-pic'>
                 <div><img src={ruiImg} /></div>
