@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .app {
-	background-color: #18c7b8;
+	background-color: #e0851c;
 	height: -webkit-min-content;
 	height: -moz-min-content;
 	height: min-content;
@@ -87,6 +87,12 @@
 
 .question-img img {
   width: 20%;
+  border-radius: 15px;
+  border: 8px solid #06D6A0;
+}
+
+.show-answer-img img {
+  width: 80%;
   border-radius: 15px;
   border: 8px solid #06D6A0;
 }
