@@ -1,5 +1,5 @@
 import './App.css';
-import appImg from './assets/app-img.svg';
+import appImg from './assets/app-img.png';
 import tickImg from './assets/checked-tick.svg';
 import crossImg from './assets/cross.svg';
 import trophyImg from './assets/trophy.svg';
