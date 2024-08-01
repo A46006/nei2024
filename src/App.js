@@ -6,6 +6,8 @@ import trophyImg from './assets/trophy.svg';
 import neuralNet from "./assets/Neural_network.svg";
 import convAnim from "./assets/conv_anim.gif"
 import neiImg from './assets/NEI.png';
+import ussImg from "./assets/team/ussumane.soare.png"
+import gustImg from "./assets/team/gustavo.jacinto.png"
 import ruiImg from './assets/team/rui.duarte.png';
 import questionSet from './questions';
 import React, { useState } from 'react';
@@ -157,8 +159,8 @@ function App() {
               </div>
             </div>
             <div className='answer-section'>
-                <button style={{textAlign: 'center'}} className='start-btn' onClick={() => setScreen(screen.QUESTION)}>F&aacute;cil<br />(Imagens &Oacute;pticas)</button>
-                <button style={{textAlign: 'center'}} onClick={() => {setHardMode(true);setScreen(screen.QUESTION)}}>Dif&iacute;cil<br />(Imagens Radar)</button>
+                <button style={{textAlign: 'center'}} className='start-btn' onClick={() => setScreen(screen.QUESTION)}>Fácil<br />(A partir da imagem original)</button>
+                <button style={{textAlign: 'center'}} onClick={() => {setHardMode(true);setScreen(screen.QUESTION)}}>Difícil<br />(A partir de uma imagem dentro da rede)</button>
             </div>
           </div>
         </>
@@ -274,11 +276,11 @@ function App() {
             <p>Esta actividade foi criada no <a href="https://www.inesc-id.pt/">INESC-ID</a>, e foi desenvolvida por:</p>
             <div className='team-pics'>
               <div className='team-pic'>
-                <div><img /></div>
+                <div><img src={ussImg}/></div>
                 <div>Ussumane Soaré</div>
               </div>
               <div className='team-pic'>
-                <div><img /></div>
+                <div><img src={gustImg}/></div>
                 <div>Gustavo Jacinto</div>
               </div>
               <div className='team-pic'>
