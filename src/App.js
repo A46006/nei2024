@@ -207,22 +207,22 @@ function App() {
               <div className='show-answer-imgs'>
               {lastAnswer === questions[currentQuestion] ? (
                 <>
-                  <div className='question-img'>
+                  <div className='show-answer-img'>
                     <img className='correct' src={isHardMode ? questionSet[questions[currentQuestion]].harderImg : questionSet[questions[currentQuestion]].answerImg} />
                   </div>
-                  <div className='question-img'>
+                  <div className='show-answer-img'>
                     <img className='tick' src={tickImg} />
                   </div>
                 </>
               ) : (
                 <>
-                  <div className='question-img'>
+                  <div className='show-answer-img'>
                     <img src={isHardMode ? questionSet[questions[currentQuestion]].harderImg : questionSet[questions[currentQuestion]].answerImg} />
                   </div>
-                  <div className='question-img'>
+                  <div className='show-answer-img'>
                     <img className='incorrect' src={isHardMode ? questionSet[lastAnswer].harderImg : questionSet[lastAnswer].answerImg} />
                   </div>
-                  <div className='question-img'>
+                  <div className='show-answer-img'>
                     <img className='cross' src={crossImg} />
                   </div>
                 </>
@@ -230,7 +230,7 @@ function App() {
               </div>
               <div className='show-answer-explain'>
                 <div className='show-answer-text'>
-                  {questionSet[questions[currentQuestion]].answerText}
+                  {isHardMode ? questionSet[questions[currentQuestion]].hardAnswerText : questionSet[questions[currentQuestion]].answerText}
                 </div>
                 <div className='question-img'>
                   <img className='harder-img' src={questionSet[questions[currentQuestion]].questionImg} />
@@ -271,7 +271,7 @@ function App() {
           </div>
           <div className='credits-section'>
             <p>Obrigado por teres participado e esperemos que tenhas gostado!</p>
-            <p>Esta actividade foi criada no âmbito do projecto de investigação <a href="https://www.inesc-id.pt/projects/IE01018/">SARRROCA</a> (PTDC/EEI-HAC/31819/2017) em execução no <a href="https://www.inesc-id.pt/">INESC-ID</a>, financiado pela FCT, e foi desenvolvida por:</p>
+            <p>Esta actividade foi criada no <a href="https://www.inesc-id.pt/">INESC-ID</a>, e foi desenvolvida por:</p>
             <div className='team-pics'>
               <div className='team-pic'>
                 <div><img /></div>
